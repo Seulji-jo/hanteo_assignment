@@ -7,7 +7,7 @@ interface ListProps {
 
 export default function NavList({ path, name }: ListProps) {
   return (
-    <li>
+    <li className="px-[15px]">
       <NavLink to={path}>{name}</NavLink>
     </li>
   );
