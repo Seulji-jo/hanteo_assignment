@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router";
+import { NavLink, Outlet } from 'react-router';
+import NavList from '../components/NavList';
 
 export default function Layout() {
   return (
@@ -7,9 +8,12 @@ export default function Layout() {
         <header>
           <nav>
             <ul>
-              <li>
-                <NavLink to="/category">카테고리</NavLink>
-              </li>
+              <NavList path="/chart" name="차트" />
+              <NavList path="/whook" name="Whook" />
+              <NavList path="/events" name="이벤트" />
+              <NavList path="/news" name="뉴스" />
+              <NavList path="/store" name="스토어" />
+              <NavList path="/charging" name="충전소" />
             </ul>
           </nav>
         </header>
