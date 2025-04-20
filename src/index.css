@@ -23,17 +23,6 @@ body {
   height: 100%;
 }
 
-/* .banner .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-*/
-
 .banner {
   .swiper-slide {
     opacity: 0.4;
@@ -41,5 +30,8 @@ body {
   }
   .swiper-slide-active {
     opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: #f6339a;
   }
 }

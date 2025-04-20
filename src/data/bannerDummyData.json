@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "https://dummyimage.com/640x16:9",
+    "title": "[M COUNTDOWN] 10월 2주차 엠카 사전 투표하기",
+    "buttonName": "투표하기",
+    "linkUrl": "https://www.mnetplus.world/ko",
+    "startAt": "2025.02.08",
+    "finishAt": "2020.04.08 17:00 (KST)"
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://dummyimage.com/640x16:9/000/fff",
+    "title": "[Hanteo_global]한터글로벌페이지로",
+    "buttonName": "이동하기",
+    "linkUrl": "http://www.hanteoglobal.com/",
+    "startAt": "2025.02.08",
+    "finishAt": "2020.04.08 17:00 (KST)"
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://dummyimage.com/640x16:9/e0a240/fff",
+    "title": "[HANTEO_ASSIGNMENT] 새창열기",
+    "buttonName": "투표하기",
+    "linkUrl": "#",
+    "startAt": "2025.02.08",
+    "finishAt": "2020.04.08 17:00 (KST)"
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://dummyimage.com/640x16:9/bc1c73/fff",
+    "title": "[NAVER] 네이버 페이지로~",
+    "buttonName": "이동하기",
+    "linkUrl": "https://www.naver.com/",
+    "startAt": "2025.02.08",
+    "finishAt": "2020.04.08 17:00 (KST)"
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://dummyimage.com/640x16:9/444cf6/fff",
+    "title": "[KAKAO] 다음메인화면으로",
+    "buttonName": "투표하기",
+    "linkUrl": "https://www.daum.net/",
+    "startAt": "2025.02.08",
+    "finishAt": "2020.04.08 17:00 (KST)"
+  }
+]

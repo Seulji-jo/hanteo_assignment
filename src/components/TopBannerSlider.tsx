@@ -1,9 +1,11 @@
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Banner from './Banner';
+import bannerDatas from '../data/bannerDummyData.json';
 
 export default function TopBannerSlider() {
   return (
-    <section className="h-[240px] overflow-hidden bg-neutral-50">
+    <section className="h-[240px] overflow-hidden drop-shadow-md">
       <Swiper
         className="banner h-full !py-[12px]"
         slidesPerView={'auto'}
@@ -13,21 +15,14 @@ export default function TopBannerSlider() {
         pagination={{ clickable: true }}
         modules={[Pagination]}
       >
-        <SwiperSlide className="!h-[200px] !w-[390px] rounded-xl bg-blue-400">
-          Slide 1
-        </SwiperSlide>
-        <SwiperSlide className="!h-[200px] !w-[390px] rounded-xl bg-blue-400">
-          Slide 2
-        </SwiperSlide>
-        <SwiperSlide className="!h-[200px] !w-[390px] rounded-xl bg-blue-400">
-          Slide 3
-        </SwiperSlide>
-        <SwiperSlide className="!h-[200px] !w-[390px] rounded-xl bg-blue-400">
-          Slide 4
-        </SwiperSlide>
-        <SwiperSlide className="!h-[200px] !w-[390px] rounded-xl bg-blue-400">
-          Slide 5
-        </SwiperSlide>
+        {bannerDatas.map((data, i) => (
+          <SwiperSlide
+            key={i}
+            className="!h-[200px] !w-[390px] overflow-hidden rounded-xl bg-white"
+          >
+            <Banner bannerData={data} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
