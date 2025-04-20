@@ -35,3 +35,9 @@ body {
     background: #f6339a;
   }
 }
+
+.content {
+  .swiper-slide {
+    overflow: scroll;
+  }
+}

@@ -1,3 +1,5 @@
+import PageLayout from '../components/PageLayout';
+
 export default function Store() {
-  return <div>Store</div>;
+  return <PageLayout title="Store" />;
 }

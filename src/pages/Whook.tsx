@@ -1,3 +1,5 @@
+import PageLayout from '../components/PageLayout';
+
 export default function Whook() {
-  return <div>Whook</div>;
+  return <PageLayout title="Whook" maxInfinite={2} />;
 }
