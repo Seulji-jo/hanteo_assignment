@@ -1,6 +1,6 @@
 import { Outlet, useLocation, useNavigate } from 'react-router';
 import Header from './Header';
-import Banner from '../components/Banner';
+import TopBannerSlider from '../components/TopBannerSlider';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { useEffect, useRef, useState } from 'react';
 import { routeMap } from '../config/routeConfig';
@@ -24,23 +24,23 @@ export default function Layout() {
 
   return (
     <div className="flex h-[900px] w-[425px] flex-col">
+      {/* <div className="flex h-[900px] w-[425px] min-w-0 flex-col overflow-visible"> */}
       <Header />
       <main className="flex flex-1 flex-col">
-        <Banner />
+        <TopBannerSlider />
         <section className="flex-1 bg-neutral-200">
           <Swiper
             className="h-full"
             onSwiper={swiper => (swiperRef.current = swiper)}
             onSlideChange={swiper => setCurrSlideIdx(swiper.activeIndex)}
             initialSlide={currPathIdx}
-            spaceBetween={0}
             slidesPerView={1}
             allowTouchMove
           >
-            {routeMap.map(({ path }, index) => {
+            {routeMap.map(({ path }, i) => {
               return (
-                <SwiperSlide key={index} className="h-full">
-                  {location.pathname === path && <Outlet />}
+                <SwiperSlide key={`${path}${i}`} className="h-full">
+                  <Outlet />
                 </SwiperSlide>
               );
             })}

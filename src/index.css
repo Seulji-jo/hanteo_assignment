@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'swiper/css';
+@import 'swiper/css/pagination';
 
 html {
   background-color: #333;
@@ -20,4 +21,25 @@ body {
 
 .swiper-wrapper {
   height: 100%;
+}
+
+/* .banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+*/
+
+.banner {
+  .swiper-slide {
+    opacity: 0.4;
+    transition: opacity 0.3s;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
 }
