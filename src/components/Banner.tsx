@@ -14,7 +14,6 @@ interface BannerProps {
 
 export default function Banner({ bannerData }: BannerProps) {
   const { imgSrc, title, buttonName, linkUrl, startAt, finishAt } = bannerData;
-  console.log(new Date());
   return (
     <ExternalLink url={linkUrl}>
       <div className="flex h-full w-full flex-col">

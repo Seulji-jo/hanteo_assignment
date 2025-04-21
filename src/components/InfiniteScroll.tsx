@@ -2,7 +2,7 @@ import { ReactNode, useEffect, useRef } from 'react';
 import { InfiniteScrollEndHandler } from '../types';
 import { useIntersectionObserver } from '../hooks/useIntersectObserver';
 
-export interface InfiniteScrollProps {
+interface InfiniteScrollProps {
   disabled?: boolean;
   rootMargin?: string;
   onEnd?: InfiniteScrollEndHandler;
