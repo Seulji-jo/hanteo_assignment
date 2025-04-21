@@ -38,9 +38,6 @@ export default function PageLayout({
   return (
     <div className="flex flex-1 flex-col gap-3 overflow-auto p-[15px]">
       <h2>{title}</h2>
-      {/* <InfiniteScroll disabled={count >= 3} onEnd={handleEnd} rootMargin="0px">
-        <div className="flex flex-col gap-3">{contentList}</div>
-      </InfiniteScroll> */}
       <InfiniteScroll onEnd={handleEnd} disabled={count >= maxInfinite}>
         <div className="flex flex-col gap-5">
           {contentList}
